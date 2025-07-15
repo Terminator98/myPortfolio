@@ -99,13 +99,16 @@ class ExperienceCard extends Component {
                 </div>
               </div>
               <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  marginTop: 20,
-                }}
+                //   style={{
+                //     display: "flex",
+                //     justifyContent: "flex-start",
+                //     marginTop: 20,
+                //   }}
+                // >
+                //   <div className="repo-description" />
+                className="experience-card-description"
+                style={{ color: theme.text, whiteSpace: "pre-line" }}
               >
-                <div className="repo-description" />
                 {experience["description"]}
               </div>
             </div>

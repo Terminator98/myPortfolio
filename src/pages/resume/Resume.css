@@ -1,0 +1,143 @@
+.resume-main {
+  width: 100%;
+}
+
+.basic-resume {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.resume-heading-div {
+  display: flex;
+}
+
+.resume-heading-div > * {
+  flex: 1;
+}
+
+.resume-heading-text-div {
+  text-align: center;
+}
+
+.resume-heading-text {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.resume-heading-sub-text {
+  font-size: 30px;
+  font-family: "Google Sans Regular";
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.resume-header-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Google Sans Medium";
+}
+
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.download-btn,
+.view-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: "Google Sans Regular";
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.download-btn:hover,
+.view-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.pdf-viewer-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.pdf-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1380px) {
+  .resume-heading-text {
+    font-size: 50px;
+    margin-top: 80px;
+  }
+  .resume-heading-sub-text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-heading-text {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .resume-heading-sub-text {
+    font-size: 20px;
+  }
+
+  .resume-header-detail-text {
+    font-size: 16px;
+    margin-right: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+  }
+
+  .download-btn,
+  .view-btn {
+    width: 200px;
+    justify-content: center;
+  }
+
+  .pdf-viewer-container {
+    height: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pdf-viewer-container {
+    height: 500px;
+    margin-bottom: 20px;
+  }
+}
